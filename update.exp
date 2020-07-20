@@ -1,0 +1,10 @@
+#!/usr/bin/expect
+
+spawn git clone https://gitxxxxxxxxxxxxxxxx/tmpcode
+set timeout 30
+expect "*Username*"
+send "username\r"
+set timeout 30
+expect "*Password*"
+send "password\r"
+expect eof
