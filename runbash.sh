@@ -8,5 +8,5 @@ echo "REPOSITORY EXIST, UPDATE..."
 /home/pi/tmp/update.exp
 else
 echo "REPOSITORY NOT EXIST, INIT..."
-/home/pi/tmp/smrinit.exp
+/home/pi/tmp/init.exp
 fi
