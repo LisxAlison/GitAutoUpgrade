@@ -1,0 +1,11 @@
+#!/usr/bin/expect
+
+spawn git clone https://gitxxxxxxx/tmpcode
+set timeout 30
+expect "*Username*"
+send "username\r"
+set timeout 30
+expect "*Password*"
+send "password\r"
+#这个位置之前没有以expect eof结尾，而是使用interact结尾导致git请求无法正常提交，卡住
+expect eof
